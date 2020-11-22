@@ -1,0 +1,1 @@
+sudo docker run --detach \   --publish 82:80 \   --name web1 \   --restart always \   --volume /var/www/html:/var/www/html \   --volume /etc/apache2:/etc/apache2 \   firespring/apache2-php:latest
