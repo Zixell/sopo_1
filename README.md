@@ -13,3 +13,5 @@ EXPOSE 80/tcp`
 * Run docker container using run-apache.sh script in repository 
 
 * Change index.html at /var/www/html
+
+![Image of index](/images/screen.png)
