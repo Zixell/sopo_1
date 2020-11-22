@@ -1,21 +1,15 @@
-# sopo_1
+## Launch Apache2 through the Docker and change "index.html"
 
-# Launch Apache2 through the Docker and change index.html
+* _Pull docker image from hub or create your own Dockerfile:_
 
-## 1. Pull docker image from hub or create your own Dockerfile:
-
-For example:
-
-FROM ubuntu:16.04
+`FROM ubuntu:16.04
 
 RUN apt update && apt install -y apache2
 
-EXPOSE 80/tcp
+EXPOSE 80/tcp`
 
-## 2. Run docker container using run-apache.sh script in repository 
+* If you use your own Docker file then build it `docker build -t web`
 
-## 3. Change index.html at /var/www/html
+* Run docker container using run-apache.sh script in repository 
 
-Result:
-
-![Image of index](https://pastenow.ru/cd9ed1ad8ce561dbab2681d08a0efaf8)
+* Change index.html at /var/www/html
